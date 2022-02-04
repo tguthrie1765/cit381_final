@@ -1,0 +1,70 @@
+import "./styles.css";
+import React, { useState } from "react";
+import { bookData } from "./Data";
+
+// main component
+// has contains assgined state for button selection
+//contains input state
+export default function Search() {
+  const [selection, setSelection] = useState("Keyword");
+  const [input, setInput] = useState("");
+
+  return (
+    <div className="Home">
+      <br />
+      <h1>LibrarySearch </h1>
+      <br />
+      <div className="dropdown">
+        <button className="dropbutton">{selection}</button>
+        <div className="dropdown-content">
+          <button onClick={() => setSelection("Keyword")}>Keyword</button>
+          <button onClick={() => setSelection("Title")}>Title</button>
+          <button onClick={() => setSelection("Author")}>Author</button>
+        </div>
+      </div>
+      <input type="text" id="test" placeholder="Search..." />
+      <button onClick={() => {}} className="mGlass">
+        &#x1F50E;
+      </button>
+      <div>
+        <SearchResults />
+      </div>
+      <div className="UO">
+        <img src="UO.png" alt="UO" />
+      </div>
+    </div>
+  );
+}
+
+//search componet
+//use filtering to remove any objects from
+// data array that do not match input value
+// return any left over data
+function SearchData() {
+  return "";
+}
+
+// display componet displays all data left over from SearchData
+function SearchResults() {
+  let data = [];
+  for (let i = 0; i < bookData.length; i++) {
+    data = [...data, bookData[i].Title];
+  }
+  const vars = bookData.map((book, index) => {
+    const { Title, Author } = book;
+    return <li>{(Title, Author)}</li>;
+  });
+  return (
+    <div>
+      {data}
+      <hr />
+      {vars}
+    </div>
+  );
+}
+
+//when typing in search bar, find matching results without showing user
+//when button clicked, take input put as parameter in
+//search function
+//for each match, display results in a list where that O is
+//EXTRA: option picked in dropdown chooses which key to search with
