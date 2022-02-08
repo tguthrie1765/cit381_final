@@ -31,7 +31,10 @@ export default function Search() {
         value={input}
       />
       <button onClick={() => {}} className="mGlass">
-        <span> &#x1F50E</span>;
+        <span role="img" aria-label="search glass">
+          {" "}
+          &#x1F50E;
+        </span>
       </button>
 
       {JSON.stringify(searchByKeyword(bookData, selection, input))}
