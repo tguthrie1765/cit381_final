@@ -1,6 +1,7 @@
 import "./styles.css";
 import React, { useState } from "react";
 import { bookData } from "./Data";
+import { searchByKeyword } from "./utl";
 
 // main component
 // has contains assgined state for button selection
@@ -17,18 +18,24 @@ export default function Search() {
       <div className="dropdown">
         <button className="dropbutton">{selection}</button>
         <div className="dropdown-content">
-          <button onClick={() => setSelection("Keyword")}>Keyword</button>
-          <button onClick={() => setSelection("Title")}>Title</button>
-          <button onClick={() => setSelection("Author")}>Author</button>
+          <button onClick={() => setSelection("keyword")}>Keyword</button>
+          <button onClick={() => setSelection("title")}>Title</button>
+          <button onClick={() => setSelection("author")}>Author</button>
         </div>
       </div>
-      <input type="text" id="test" placeholder="Search..." />
+      <input
+        type="text"
+        id="test"
+        placeholder="Search..."
+        onChange={(e) => setInput(e.target.value)}
+        value={input}
+      />
       <button onClick={() => {}} className="mGlass">
-        &#x1F50E;
+        <span> &#x1F50E</span>;
       </button>
-      <div>
-        <SearchResults />
-      </div>
+
+      {JSON.stringify(searchByKeyword(bookData, selection, input))}
+
       <div className="UO">
         <img src="UO.png" alt="UO" />
       </div>

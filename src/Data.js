@@ -1,93 +1,93 @@
 const bookData = [
   {
-    Title: "In Search of Lost Time",
-    Author: "Marcel Proust",
-    ISBN: "9781940313092",
-    Keyword: "lost time",
-    MediaType: "book",
-    Volume: "",
-    Status: ""
+    title: "In Search of Lost Time",
+    author: "Marcel Proust",
+    isbn: "9781940313092",
+    keyword: "lost time",
+    mediaType: "book",
+    volume: "",
+    status: ""
   },
   {
-    Title: "Ulysses",
-    Author: "James Joyce",
-    ISBN: "9781562313092",
-    Keyword: "dublin",
-    MediaType: "book",
-    Volume: "",
-    Status: ""
+    title: "Ulysses",
+    author: "James Joyce",
+    isbn: "9781562313092",
+    keyword: "dublin",
+    mediaType: "book",
+    volume: "",
+    status: ""
   },
   {
-    Title: "Don Quixote",
-    Author: "Miguel de Cervantes",
-    ISBN: "9778940313092",
-    Keyword: "Alonso Quixano",
-    MediaType: "book",
-    Volume: "",
-    Status: ""
+    title: "Don Quixote",
+    author: "Miguel de Cervantes",
+    isbn: "9778940313092",
+    keyword: "Alonso Quixano",
+    mediaType: "book",
+    volume: "",
+    status: ""
   },
   {
-    Title: " The Great Gatsby",
-    Author: "F. Scott Fitzgeraldt",
-    ISBN: "9781945613092",
-    Keyword: "",
-    MediaType: "book",
-    Volume: "",
-    Status: ""
+    title: " The Great Gatsby",
+    author: "F. Scott Fitzgeraldt",
+    isbn: "9781945613092",
+    keyword: "",
+    mediaType: "book",
+    volume: "",
+    status: ""
   },
   {
-    Title: "Moby Dick",
-    Author: "Herman Melville",
-    ISBN: "9723840313092",
-    Keyword: "whale",
-    MediaType: "book",
-    Volume: "",
-    Status: ""
+    title: "Moby Dick",
+    author: "Herman Melville",
+    isbn: "9723840313092",
+    keyword: "whale",
+    mediaType: "book",
+    volume: "",
+    status: ""
   },
   {
-    Title: "Intermediate Accounting",
-    Author: "Spiceland",
-    ISBN: "9781940314789",
-    Keyword: "textbook",
-    MediaType: "ebook",
-    Volume: "10",
-    Status: ""
+    title: "Intermediate Accounting",
+    author: "Spiceland",
+    isbn: "9781940314789",
+    keyword: "textbook",
+    mediaType: "ebook",
+    volume: "10",
+    status: ""
   },
   {
-    Title: "The Right Stuff",
-    Author: "Am Rouhi",
-    ISBN: "7891940313092",
-    Keyword: "engineering news",
-    MediaType: "artical",
-    Volume: "",
-    Status: ""
+    title: "The Right Stuff",
+    author: "Am Rouhi",
+    isbn: "7891940313092",
+    keyword: "engineering news",
+    mediaType: "artical",
+    volume: "",
+    status: ""
   },
   {
-    Title: "Learning to See Stuff",
-    Author: "RW Fleming",
-    ISBN: "9781482313092",
-    Keyword: "Opinion",
-    MediaType: "artical",
-    Volume: "",
-    Status: ""
+    title: "Learning to See Stuff",
+    author: "RW Fleming",
+    isbn: "9781482313092",
+    keyword: "Opinion",
+    mediaType: "artical",
+    volume: "",
+    status: ""
   },
   {
-    Title: "The Odyssey",
-    Author: "Homer",
-    ISBN: "9781944521092",
-    Keyword: "epic",
-    MediaType: "book",
-    Volume: "",
-    Status: ""
+    title: "The Odyssey",
+    author: "Homer",
+    isbn: "9781944521092",
+    keyword: "epic",
+    mediaType: "book",
+    volume: "",
+    status: ""
   },
   {
-    Title: " Alice's Adventures in Wonderland",
-    Author: "Lewis Carroll",
-    ISBN: "97811238313092",
-    Keyword: "fantasy",
-    MediaType: "book",
-    Volume: "",
-    Status: ""
+    title: " Alice's Adventures in Wonderland",
+    author: "Lewis Carroll",
+    isbn: "97811238313092",
+    keyword: "fantasy",
+    mediaType: "book",
+    volume: "",
+    status: ""
   }
 ];
 
