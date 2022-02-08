@@ -40,8 +40,22 @@ export default function Search() {
 //use filtering to remove any objects from
 // data array that do not match input value
 // return any left over data
-function SearchData() {
-  return "";
+function Filter(input, props) {
+  let filter = input.toUpperCase();
+
+  switch (props) {
+    case "title":
+      console.log("title " + filter);
+      break;
+    case "keyword":
+      console.log("keyword " + filter);
+      break;
+    case "author":
+      console.log("author " + filter);
+      break;
+    default:
+      return;
+  }
 }
 
 // display componet displays all data left over from SearchData
