@@ -30,13 +30,15 @@ export default function Search() {
         onChange={(e) => setInput(e.target.value)}
         value={input}
       />
+      {/* TODO: Make so when clicked it calls search function*/}
       <button onClick={() => {}} className="mGlass">
         <span role="img" aria-label="search glass">
           {" "}
           &#x1F50E;
         </span>
       </button>
-
+      {/* calls the search function. 
+    TODO: make so when it prints it looks better*/}
       {JSON.stringify(searchByKeyword(bookData, selection, input))}
 
       <div className="UO">
