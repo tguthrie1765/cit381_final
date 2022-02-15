@@ -78,35 +78,35 @@ function Inputs(props) {
   }
 
   return (
-    <div className="dropdown">
-      <button className="dropbutton">{selection}</button>
-      <div className="dropdown-content">
-        <button onClick={() => setSelection("keyword")}>Keyword</button>
-        <button onClick={() => setSelection("title")}>Title</button>
-        <button onClick={() => setSelection("author")}>Author</button>
+    <div>
+      <div className="dropdown">
+        <button className="dropbutton">{selection}</button>
+        <div className="dropdown-content">
+          <button onClick={() => setSelection("keyword")}>Keyword</button>
+          <button onClick={() => setSelection("title")}>Title</button>
+          <button onClick={() => setSelection("author")}>Author</button>
+        </div>
       </div>
-      <div>
-        <input
-          type="text"
-          id="test"
-          placeholder="Search..."
-          onChange={(e) => setInput(e.target.value)}
-          value={input}
-        />
-      </div>
-      <div>
-        <button
-          onClick={() => {
-            submit();
-          }}
-          className="mGlass"
-        >
-          <span role="img" aria-label="search glass">
-            {" "}
-            &#x1F50E;
-          </span>
-        </button>
-      </div>
+      &nbsp;
+      <input
+        type="text"
+        id="test"
+        placeholder="Search..."
+        onChange={(e) => setInput(e.target.value)}
+        value={input}
+      />
+      &nbsp;
+      <button
+        onClick={() => {
+          submit();
+        }}
+        className="mGlass"
+      >
+        <span role="img" aria-label="search glass">
+          {" "}
+          &#x1F50E;
+        </span>
+      </button>
     </div>
   );
 }
@@ -147,7 +147,9 @@ function SearchResults(props) {
 
   return data.map((book, index) => (
     <div key={index}>
-      {book.title}, {book.author}
+      <li>
+        {book.title}, {book.author}
+      </li>
     </div>
   ));
 }
